@@ -1,0 +1,45 @@
+@font-face {
+    font-family: "Playfair Display";
+    src: url(../fonts/PlayfairDisplay-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Playfair Display';
+}
+
+a {
+    text-decoration: none;
+    color: #ccc;
+}
+
+button {
+    background: white;
+    border: none;
+    outline: none;
+    padding: 0;
+}
+
+.d-block {
+    display: block;
+}
+
+.d-none {
+    display: none !important;
+}

@@ -1,0 +1,49 @@
+// .container {
+//     max-width: $desktop-cont-width;
+//     margin: 0 auto;
+//     background-color: orangered;
+// }
+
+@include respond(xl) {
+    .container {
+        max-width: $xl-cont-width;
+        margin: 0 auto;
+        
+    }
+}
+
+@include respond(lg) {
+    .container {
+        max-width: $lg-cont-width;
+        margin: 0 auto;
+        
+    }
+    
+}
+
+@include respond(md) {
+    .container {
+        max-width: $md-cont-width;
+        margin: 0 auto;
+        
+    }
+    
+}
+
+@include respond(sm) {
+    .container {
+        max-width: $sm-cont-width;
+        margin: 0 auto;
+        
+    }
+    
+}
+
+@include respond(xs) {
+    .container {
+        max-width: $xs-cont-width;
+        margin: 0 auto;
+        
+    }
+    
+}

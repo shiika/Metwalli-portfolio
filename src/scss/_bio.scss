@@ -1,0 +1,38 @@
+.bio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto";
+    font-style: italic;
+    margin-top: 5rem;
+
+    &__content {
+        text-align: center;
+        font-size: 2.4rem;
+
+        p {
+            margin: 4rem auto;
+
+            &:nth-child(2) {
+                max-width: 48rem;
+            }
+
+            &:nth-child(3) {
+                max-width: 55rem;
+            }
+        }
+
+        &__mail {
+            color: #8B8B8B;
+            font-size: 2rem;
+
+            span {
+                display: block;
+                font-size: 1.8rem;
+                color: #BCBCBC;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}

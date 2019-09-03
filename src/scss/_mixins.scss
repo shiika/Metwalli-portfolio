@@ -1,0 +1,31 @@
+// 1em = 16px 
+
+/*
+    Breakpoints: 
+    - phone => max-width: 600px(37.5em)
+    - tab-port => max-width: 900px(56.25em)
+    - tab-land => max-width: 1200px(75em)
+    Any width between (1200:1800) would take the normal style
+    - big-desktop => min-width: 1800px(112.5em)
+
+    Note: Em and rem are not affected by the root font-size or by th parent element of the element ( as for em)
+                        they're just affected by the browser's default font-size (16px);
+*/
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == xs {
+        @media (max-width: 575px) { @content; }
+    }
+    @if $breakpoint == sm {
+        @media (max-width: 767px) { @content; }
+    }
+    @if $breakpoint == md {
+        @media (max-width: 991px) { @content; }
+    }
+    @if $breakpoint == lg {
+        @media (max-width: 1199px) { @content; }
+    }
+    @if $breakpoint == xl {
+        @media (max-width: 1800px) { @content; }
+    }
+}
